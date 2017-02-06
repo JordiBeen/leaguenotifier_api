@@ -14,6 +14,8 @@ BY LABEL A
 
 <body>
 
+    <%include file="leaguenotifier:templates/inc/pop_flash.mako" />
+
     ${self.body()}
 
 

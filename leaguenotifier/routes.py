@@ -15,3 +15,7 @@ def setup_routes(config):
                      '/register',
                      request_method='POST')
 
+    # Dashboard
+    config.add_route('dashboard',
+                     '/dashboard',
+                     request_method='GET')

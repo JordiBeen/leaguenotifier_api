@@ -8,7 +8,7 @@
               <div class="row">
                   <div class="col-xs-6">
                       <div class="well login-well">
-                          <form id="loginForm" method="POST">
+                          <form id="loginForm" method="POST" action="/login">
                               <div class="form-group">
                                   <label for="username" class="control-label">Username</label>
                                   <input type="text" class="form-control" name="username" value="" required="" title="Please enter your username" placeholder="username">
@@ -19,7 +19,6 @@
                                   <input type="password" class="form-control" name="password" placeholder="password" value="" required="" title="Please enter your password">
                                   <span class="help-block"></span>
                               </div>
-                              <div id="loginErrorMsg" class="alert alert-error hide">Wrong username or password</div>
                               <button type="submit" value="login" name="submit" class="btn btn-success btn-block">Login</button>
                           </form>
                       </div>
