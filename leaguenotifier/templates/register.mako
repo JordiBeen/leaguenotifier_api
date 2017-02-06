@@ -6,7 +6,7 @@
       <div class="modal-content">
           <div class="modal-body">
               <div class="row">
-                  <div class="col-xs-6">
+                  <div class="col-xs-12">
                       <div class="well login-well">
                           <form id="loginForm" method="POST">
                               <div class="form-group">
@@ -19,20 +19,14 @@
                                   <input type="password" class="form-control" name="password" placeholder="password" value="" required="" title="Please enter your password">
                                   <span class="help-block"></span>
                               </div>
-                              <div id="loginErrorMsg" class="alert alert-error hide">Wrong username or password</div>
-                              <button type="submit" value="login" name="submit" class="btn btn-success btn-block">Login</button>
+                              <div class="form-group">
+                                  <label for="email" class="control-label">E-mail address</label>
+                                  <input type="email" class="form-control" name="email" placeholder="email" value="" required="" title="Please enter your email">
+                                  <span class="help-block"></span>
+                              </div>
+                              <button type="submit" value="login" name="submit" class="btn btn-success btn-block">Register</button>
                           </form>
                       </div>
-                  </div>
-                  <div class="col-xs-6">
-                      <p class="lead">Register now</p>
-                      <ul class="list-unstyled" style="line-height: 2">
-                          <li><span class="fa fa-check text-success"></span> Add usernames to follow</li>
-                          <li><span class="fa fa-check text-success"></span> Something more</li>
-                          <li><span class="fa fa-check text-success"></span> Even more</li>
-                          <li><span class="fa fa-check text-success"></span> More more more</li>
-                      </ul>
-                      <p><a href="./register" class="btn btn-info btn-block">Yes please, register now!</a></p>
                   </div>
               </div>
           </div>

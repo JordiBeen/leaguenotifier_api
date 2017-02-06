@@ -13,15 +13,14 @@ class User(Base):
     id = Column(Integer, primary_key=True)
     username = Column(String)
     password = Column(String)
-    firstname = Column(String)
-    infix = Column(String)
-    lastname = Column(String)
     email = Column(String)
 
 
-def get_user(id_=None):
+def get_user(id_=None, username=None):
     q = DBSession.query(User)
     if id_:
         q = q.filter(User.id == id_)
+    if username:
+        q = q.filter(User.username == username)
 
     return q.first()

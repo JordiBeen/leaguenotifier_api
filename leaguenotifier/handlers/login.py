@@ -7,11 +7,8 @@ from ..models.user import get_user
 log = logging.getLogger(__name__)
 
 
-@view_config(route_name='home', permission='public',
+@view_config(route_name='login_view', permission='public',
              renderer="leaguenotifier:templates/index.mako")
-def home_view(request):
-    user = get_user(id_=1)
-
-    return {
-        'user': user
-    }
+def login_view(request):
+	
+    return {}

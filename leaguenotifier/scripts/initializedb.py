@@ -34,18 +34,18 @@ def main(argv=sys.argv):
     DBSession.configure(bind=engine)
     Base.metadata.create_all(engine)
 
-    with transaction.manager:
-        u = get_user(id_=1)
-        if not u:
-            u = User()
-            u.username = "leaguenotifier"
-            u.firstname = "admin"
-            u.infix = "of"
-            u.lastname = "leaguenotifier"
+    # with transaction.manager:
+    #     u = get_user(id_=1)
+    #     if not u:
+    #         u = User()
+    #         u.username = "leaguenotifier"
+    #         u.firstname = "admin"
+    #         u.infix = "of"
+    #         u.lastname = "leaguenotifier"
 
-            u.email = 'jordi@labela.nl'
-            u.password = hash_password("password")
+    #         u.email = 'hello@jordibeen.nl'
+    #         u.password = hash_password("password")
 
-            persist(u)
+    #         persist(u)
 
     print("Database initialisation completed.")
